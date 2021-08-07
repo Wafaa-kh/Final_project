@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <head>
+        <titel>
+          
+        </titel>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap">
+    </head>
+    <body>
+        <div class="topnav">
+            
+                <div class="register">
+                    <img src="assets/image/logo.jpg" height="50px" width="50px"\>
+                      &#128100; <a>Sign Up </a>  
+                         &#8677; <a>Sign In</a> 
+                </div> 
+                <div>
+
+                    <a class="active" href="#home">HOME</a>
+                    <a href="#our_service">OUR SERVICE</a>
+                    <a href="#booking">BOOKING</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#about">About</a>
+                </div>
+        </div>        
+        <div class="video">
+                    <video width="100%" height="240" controls>
+                      <source src="https://pin.it/1vBTwYs" type="video/mp4">
+                    </video>
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="assets/image/03-2013-ford-mustang-gt-convertible-review.jpg" style="width: 500px;">
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext"> 2 / 4</div>
+              <img src="assets/image/images.jpeg" style="width: 500px;">
+            </div>  
+            <div class="mySlides fade">
+              <div class="numbertext"> 3 / 4</div>
+              <img src="assets/image/download (1).png" style="width: 500px;">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext"> 4 / 4</div>
+              <img src="assets/image/download.jpeg" style="width: 500px;">
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+             <span class="dot"></span> 
+             <span class="dot"></span> 
+             <span class="dot"></span> 
+             <span class="dot"></span> 
+
+        </div>
+        <footer>
+            <img src="assets/image/logo.jpg" height="50px" width="50px"\>
+            <p> information about us</p>
+            
+
+
+        </footer>  
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>      
+    </body>
+</html>
